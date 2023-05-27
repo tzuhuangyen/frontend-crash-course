@@ -6,12 +6,19 @@
 時間：八週 May/02 ~ June/20th (Tue 19:30~22:00 )
 
 課程內容:
+
 #第零週 Web layout (HTML CSS)
+
 #第一週 JS array
+
 #第二週 JS array
+
 #第三週 to do list, counter, API+fetch
+
 #第四週 Pormise
+
 #第五週 
+
 #第六週～第八週 project
 
 上課方式：使用ＺＯＯＭ上課（不錄影）
