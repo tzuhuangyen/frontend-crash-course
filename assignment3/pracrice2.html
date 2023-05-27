@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice2 API</title>
+</head>
+<body>
+    
+</body>
+</html>
+<style>
+    .active-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .context  button{
+            display: block;
+margin-bottom: 16px;
+    }
+    .suggest-list{
+        font-size: 40px;
+        color: rgb(8, 8, 8);
+    }
+</style>
+<body>
+    <div class="active-area">
+    <h1>Activity suguestion</h1>
+    <div class="context">
+        <button type="button" onclick="getActive()" class="actBtn">sugesst me</button>
+        <div class="suggest-list"></div>
+    </div>
+   </div>
+    <div class="guessAge">
+        <h2>guess Age</h2>
+        <div class="context">
+            <div>
+                <input type="text" id="name" placeholder="please enter your name">
+                <button onclick="getAge()" class="guessBtn">Guess</button>
+            </div>
+            <div class="age-list"></div>
+        </div>
+    </div>
+    <script src="practice2.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise practice</title>
+</head>
+<body>
+
+     <h2>promise practice
+    <ol>
+        <li>顯示一個訊息</li>
+        <li>延遲執行</li>
+        <li>處理錯誤</li>
+        <li>執行多個promise</li>
+    </ol>
+   </h2>
+    <script>
+        //1.顯示一個訊息
+        // const myPromise= new Promise((res,rej)=>{
+        //     setTimeout(() => {
+        //         const data="First one是兩秒後出現  "
+        //         res(data);
+        //     }, 2000);
+        // })
+        // myPromise.then((data)=>{
+        //     console.log("第一題:顯示一個訊息")
+        //     console.log("Second one shows up first!非同步測試 ",data);
+        // })
+
+        //2.延遲執行
+        // async function delayData(){
+        //     await new Promise((res)=>{
+        //         setTimeout(()=>{
+        //             res();
+        //         },3000)
+        //     })
+        //     console.log("delay test complete");
+        // }
+        // delayData();
+
+        //3.處理錯誤
+        // async function HandlError(){
+        //     try{
+        //         await new Promise((res,rej)=>{
+        //             setTimeout(()=>{
+        //                 const condition =true;
+        //                 if(condition){
+        //                     res();
+        //                 }else{
+        //                     rej()
+        //                 }
+        //             },3000)
+        //         });
+        //         console.log("Promise resolved");
+        //     }catch(error){
+        //         console.log("Promise reject!!");
+        //     }
+        // }
+        // HandlError()
+
+        //4.執行多個promise
+        async function manyPromises(){
+            const promiseA = new Promise((res)=>{
+                setTimeout(() => {
+                    // const data="A"
+                    res();
+                }, 2000);
+            });
+            const promiseB = new Promise((res)=>{
+                setTimeout(() => {
+                    // const data="B"
+                    res();
+                }, 1000);
+            });
+            const promiseC = new Promise((res)=>{
+                setTimeout(() => {
+                    // const data ="C"
+                    res()
+                }, 3000);
+            });
+            
+            await promiseA;
+            await promiseB;
+            await promiseC;
+
+            console.log("all promises resolved");
+        }
+        manyPromises()
+    </script>
+</body>
+</html>

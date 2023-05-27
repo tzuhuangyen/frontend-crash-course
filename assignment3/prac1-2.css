@@ -1,0 +1,47 @@
+   /* todolist */
+   .container{
+    width: 200px;
+    margin: 0 auto;
+   }
+   h2{
+    text-align: center;
+    color: rgb(20, 169, 199);;
+   
+   }
+   .list{
+    width: 178px;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+
+}
+.addTodoBtn{
+    background-color:rgb(20, 169, 199);
+    border: 1px solid black;
+    border-radius: 16px;
+}
+.deleteToDo{
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    background-color: rgb(20, 169, 199);
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 50%;
+}
+.todolist{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+}
+.cleanAllBtn{
+background-color: rgb(20, 169, 199);
+margin-top: 16px;
+border: 1px solid black;
+border-radius: 16px;
+}

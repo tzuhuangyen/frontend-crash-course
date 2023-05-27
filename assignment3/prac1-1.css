@@ -1,0 +1,16 @@
+h2{
+    text-align: center;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+}
+input{
+    text-align: center;
+}
+.reset,.add{
+    margin-left: 16px;
+}
+.min{
+    margin-right: 16px;
+}
