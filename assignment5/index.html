@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    
+    <title>assignment5</title>
+</head>
+<body>
+    <div class="count">
+        <div>
+            <h2>計算機</h2>
+            <p>輸入兩個數字 執行基本計算功能</p>
+        </div>
+        <div class="calculator">
+            <input type="text" name="inputNumber" id="num1" placeholder="Enter a number">
+ <input type="text" name="inputNumber" id="num2" placeholder="Enter a number">
+            <div class="buttons">
+                <button type="button" onclick="add()">+</button>
+                <button type="button" onclick="mins()">-</button>
+                <button type="button" onclick="multi()">*</button>
+                <button type="button" onclick="deived()">/</button>
+            </div>
+            
+            <p>=</p>
+            <input type="text" id="result" placeholder="result">        </div>
+    </div>
+    
+    <div class="toDo-list"> <h2>to do list</h2>
+        <input type="text" placeholder="enter a thing" class="toDo-input">
+        <button type="button" class="addBtn">+</button>
+        <ul class="toDo-lists">
+
+        </ul>
+    </div>
+
+
+    <div class="count-down">
+    <h2>Countdown Timer</h2>
+    <div class="container">
+        <h3>enter the time to count down</h3>
+        <form id="addDate">
+            <input type="date" name="date" id="date">
+            <input type="time" name="time" id="time">
+            <button class ="count-down-btn" type="submit">提交</button>
+        </form>
+        <p class="hidden">截止日期<br><span id="until"></span></p>
+        <p class="hidden">還剩的時間</p>
+        <div class="pickedTime">
+            <div class="time">
+                <span id="time-years">-</span>
+                <p>年</p>
+            </div>
+            <div class="time">
+                <span id="time-days">-</span>
+                <p>天</p>
+            </div>
+            <div class="time">
+                <span id="time-hours">-</span>
+                <p>時</p>
+            </div>
+            <div class="time">
+                <span id="time-minutes">-</span>
+                <p>分</p>
+            </div>
+            <div class="time">
+                <span id="time-seconds">-</span>
+                <p>秒</p>
+            </div>
+        </div> 
+    </div>
+    
+    
+    
+    <h2>猜數字</h2>
+    
+    
+    
+    
+    <script src="all.js"></script>
+</body>
+</html>
