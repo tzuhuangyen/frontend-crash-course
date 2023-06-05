@@ -20,6 +20,9 @@
 #第五週 
 
 #第六週～第八週 project
+#靈感發癢 串接API ＋ spotify
+#chatGTP 虛擬朋友
+＃天氣 https://hackmd.io/@chrislinlin/mission_32
 
 上課方式：使用ＺＯＯＭ上課（不錄影）
 
